@@ -104,7 +104,7 @@ sometimes necessary to count “down” from a predetermined value to zero allow
 This type of counter is normally referred to as a Down Counter, (CTD). In a binary or BCD down counter, the count decreases by one for each external clock pulse from some preset value. Special dual purpose IC’s such as the TTL 74LS193 or CMOS CD4510 are 4-bit binary Up or Down counters which have an additional input pin to select either the up or down count mode
 
 # PROGRAM:
-
+```
 module COUNTER(clk,q1,q2,q3);	                                        
 input clk;
 output reg q1,q2,q3;
@@ -113,6 +113,7 @@ q3=((~q2)&(~q1))^q3;
 q2=(~q1)^q2; q1=1^q1;
 end
 endmodule
+```
 
 # RTl logic:
 ![image](https://github.com/harshulaxman/Exp-7-Synchornous-counters-/assets/145686689/41598a95-26fb-4136-bd4a-90fcbd0a4886)
