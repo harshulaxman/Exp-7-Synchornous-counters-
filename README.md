@@ -48,7 +48,7 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 # Procedure:
-```
+
 1.Create a New Project:Open Quartus and create a new project by selecting "File" > "New Project Wizard." Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
 2.Create a New Design File: Once the project is created, right-click on the project name in the Project Navigator and select "Add New File." Choose "Verilog HDL File".
 3.Write the Combinational Logic Code: Open the newly created Verilog or VHDL file and write the code for your combinational logic.
@@ -69,7 +69,7 @@ preceding the “toggling” of a bit between 0 and 1: Binary count sequence, pa
 Note that each bit in this four-bit sequence toggles when the bit before it (the bit having a lesser significance, or place-weight), toggles in a particular direction: from 1 to 0.
 Starting with four J-K flip-flops connected in such a way to always be in the “toggle” mode, we need to determine how to connect the clock inputs in such a way so that each succeeding bit toggles when the bit before it transitions from 1 to 0.
 The Q outputs of each flip-flop will serve as the respective binary bits of the final
-```
+
 
 # PROGRAM 
 ```
